@@ -39,6 +39,15 @@ Nesta trilha, desenvolvida especialmente para o programa Elas+ Tech, vou aprende
 ### 🎯 Objetivo:
 Aprender os fundamentos da lógica de programação em Java e dar os primeiros passos no desenvolvimento back-end, compreendendo os princípios da programação orientada a objetos para criar soluções simples e bem estruturadas.
 
+## 📅 Cronograma do Programa
+
+| Etapa | Período |
+|-------|---------|
+| 📚 **Curso Digital** | 26 de setembro - 08 de outubro |
+| 🤖 **TAT + Avaliação com IA Generativa** | 10 de outubro - 13 de outubro |
+| 🎓 **Formação** | 20 de outubro - 27 de abril de 2026 |
+| 🏆 **Hackathon** | 04 de maio - 06 de maio de 2026 |
+
 ## 📅 Formato das Aulas
 
 - **Modalidade:** Online
