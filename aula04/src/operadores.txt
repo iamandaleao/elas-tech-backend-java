@@ -1,0 +1,24 @@
+1. ! → NOT (negação) - Inverte o valor lógico. Se for true, vira false; se for false, vira true.
+
+boolean a = true;
+System.out.println(!a); // false
+
+2. && → AND (E lógico) - Só é true se as duas condições forem verdadeiras.
+
+boolean b = true;
+boolean c = false;
+System.out.println(b && c); // false, porque um é falso
+System.out.println(b && !c); // true, porque true && true
+
+3. || → OR (OU lógico) - É true se pelo menos uma condição for verdadeira.
+
+boolean d = false;
+boolean e = true;
+System.out.println(d || e); // true, porque um é verdadeiro
+System.out.println(d || false); // false, porque ambos são falsos
+
+
+Resumo da ordem:
+! → NOT
+&& → AND
+|| → OR
