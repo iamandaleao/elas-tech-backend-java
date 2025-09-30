@@ -1,9 +1,8 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.Period;
 
-public class data {
+public class Data {
     public static void main(String[] args) {
         /*
          Funcionalidades
@@ -38,15 +37,20 @@ public class data {
         if (proximoAniversario.isBefore(hoje) || proximoAniversario.isEqual(hoje)) {
             proximoAniversario = proximoAniversario.plusYears(1);
         }
-            System.out.println("Próximo Aniversário do cliente: " + proximoAniversario);
+        System.out.println("Próximo Aniversário do cliente: " + proximoAniversario);
 
-            //Calcular o periodo até o próximo aniversário
-            Period periodoAteAniversario  = Period.between(hoje, proximoAniversario);
+        //Calcular o periodo até o próximo aniversário
+        Period periodoAteAniversario  = Period.between(hoje, proximoAniversario);
         System.out.println("Faltam " + periodoAteAniversario.getMonths() + " meses e " + periodoAteAniversario.getDays() + " dias para " + "o próximo aniversário");
 
         // Verificar se o aniversário é antes ou depois de um evento
-        LocalDate dataEvento = LocalDate.of (2024, 19, 11);
-
+        LocalDate dataEvento = LocalDate.of (2024, 11, 19);
+        if (proximoAniversario.isAfter(dataEvento)){
+            System.out.println("O aniversário do cliente é depois do evento");
+        }
+        else {
+            System.out.println("O aniversário do cliente é antes ou no mesmo dia" + " do evento");
         }
     }
+}
 
