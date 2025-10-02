@@ -52,7 +52,7 @@ public class Cachorro {
     public void comer() {
     }
 
-    public void latir() {
+    public void soar() {
         System.out.println("AU AU");
     }
 
@@ -61,13 +61,12 @@ public class Cachorro {
     }
 
     public String interagir(String acao) {
-        if (acao.equals("carinho")) {
-            this.estadoDeEspirito = "Feliz";
-        } else if (acao.equals("Vai dormir!")) {
-            this.estadoDeEspirito = "Bravo";
-        } else {
-            this.estadoDeEspirito = "Neutro";
+        switch (acao) {
+            case "carinho": this.estadoDeEspirito = "feliz"; break;
+            case "vai dormir!": this.estadoDeEspirito = "Bravo"; break;
+            case "pisar na patinha": this.estadoDeEspirito = "triste"; break;
+            default: this.estadoDeEspirito = "Neutro"; break;
         }
-        return estadoDeEspirito;
+        return this.estadoDeEspirito;
     }
 }
