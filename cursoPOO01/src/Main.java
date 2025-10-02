@@ -1,15 +1,19 @@
-//modelagem orientada a objetos
-
 import Animais.Cachorro;
+import Animais.Gato;
+import Animais.Passaro;
 
 public class Main {
+
     public static void main(String[] args) {
 
         Cachorro cachorro1 = new Cachorro("Rex", "Branco", 10, 10.5, 20, "Neutro");
-        System.out.println(cachorro1.getNumeroDeCachorro());
+        Gato gato1 = new Gato("Felix", "Preto", 4.5);
+        Passaro passaro1 = new Passaro("Frajola", "Azul", 0.5);
 
-        Cachorro cachorro2 = new Cachorro("Puppy", "Preto", 12, 8.2, 15, "Feliz");
-        System.out.println(cachorro1.getNumeroDeCachorro());
-        System.out.println(cachorro2.getNumeroDeCachorro());
+        cachorro1.soar();
+        gato1.soar();
+        passaro1.soar();
+
     }
 }
+

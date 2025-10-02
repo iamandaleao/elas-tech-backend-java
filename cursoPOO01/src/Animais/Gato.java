@@ -1,28 +1,22 @@
 package Animais;
 
-public class Gato {
+public class Gato extends Animal {
 
     static int numeroDeGatos;
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
-    private String estadoEspirito;
 
-    public Gato(String cor, String nome, int altura, double peso, String estadoEspirito) {
-        this.cor = cor;
-        this.nome = nome;
-        this.altura = altura;
-        this.peso = peso;
-        this.estadoEspirito = estadoEspirito;
+    public Gato(String nome, String cor, double peso){
+        super(nome, cor, peso);
     }
 
-    //metodos
-    void comer(){}
+    @Override
+    public String toString() {
+        return "Gato{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 
-    void dormir(){
-        void soar(){
-
-        }
+    @Override
+    public void soar() {
+        System.out.println("MIAU MIAU!!");
     }
 }
