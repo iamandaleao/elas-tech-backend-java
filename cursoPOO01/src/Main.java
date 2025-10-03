@@ -24,5 +24,21 @@ public class Main {
          cachorro1.soar();
          gato1.soar();
          passaro1.soar();
+
+         //Pra virar mestre:
+//        int inteiro; // int, ling, byte = 0;
+//        float $$; // double e float = 0.0
+//        boolean $87; // boolean tem como default false
+//        char ch; // chhar é vazio
+//        String teste; // valor default de qualquer objeto é null
+
+//        double d = 5.5d;
+//        float f = 3.00f;
+//
+//        float x = f + (float) d;
+//        System.out.println(x);
+
+        int a = 23_456_789;
+
     }
 }
